@@ -1,0 +1,21 @@
+<!--Form code with HTML5-required attributes and pattern to validate input-->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Checking data</title>
+    <script src="modernizr.js"></script>
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Authorization</legend>
+        <p><label>Username <input type="text" name="username" required></label></p>
+        <p><label>Password <input type="password" name="password" required pattern="[0-9a-zA-Z]{12}" title="Must consist of 12 alphanumeric characters"></label></p>
+      </fieldset>
+      <p><button type="submit">Send</button></p>
+    </form>
+  </body>
+</html>
